@@ -14,7 +14,7 @@ public class UserController {
     UserClient userClient;
 
     @RequestMapping(value = "getUser/{userId}",method = RequestMethod.GET)
-    public UserDto getUser(@PathVariable("userId") long userId){
+    public UserDto getUserById(@PathVariable("userId") long userId){
         UserDto userDto = userClient.getUser(userId);
 
         return userDto;
