@@ -16,6 +16,7 @@ public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @RequestMapping(value = "/getUser/{userId}",method = RequestMethod.GET)
     public UserDto getUser(@PathVariable("userId") Long userId){
+        logger.info("getUser,userId:{}",userId);
         UserDto userDto = new UserDto();
         userDto.setId(userId);
         userDto.setUserName("Han IN A");
