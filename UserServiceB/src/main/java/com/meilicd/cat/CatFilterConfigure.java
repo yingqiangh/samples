@@ -13,6 +13,7 @@ public class CatFilterConfigure {
 
     @Bean
     public FilterRegistrationBean catFilter() {
+        System.out.println("=== catFilter ====");
         FilterRegistrationBean registration = new FilterRegistrationBean();
         CatFilter filter = new CatFilter();
         registration.setFilter(filter);

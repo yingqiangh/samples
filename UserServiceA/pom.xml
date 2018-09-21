@@ -79,6 +79,8 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
+
+
 		<!--dianping-->
 		<dependency>
 			<groupId>com.dianping.cat</groupId>
